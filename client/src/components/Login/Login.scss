@@ -1,0 +1,91 @@
+@import "../../css-config/mixins.scss";
+
+
+.form-container {
+    
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    @include md {
+        height: calc(100vh - 80px);
+    }
+
+    .inner-form {
+        min-width: 320px;
+        height: 450px;
+        padding: 40px 20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 10px;
+        gap: 100px;
+        @include md{
+            min-width: 400px;
+            height: 500px;
+            padding: 40px;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            .form-group {
+                margin-bottom: 15px;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                input[type="text"],
+                input[type="password"] {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+            }
+            p{
+                color: red;
+            }
+            .submit-btn {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 30px;
+           
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+            
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            justify-content: flex-end;
+            a {
+                color: #007bff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+

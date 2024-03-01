@@ -1,0 +1,40 @@
+@import "../../css-config/mixins.scss";
+
+.order-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    .success-container {
+        text-align: center;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 400px; // Limit width to prevent stretching
+        @include md{
+            max-width: 1000px; // Limit width to prevent stretching
+            padding: 40px;
+        }
+    }
+    
+    .success-icon {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #27ae60; // green color
+    }
+    
+    .success-heading {
+      font-size: 2em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .success-message {
+      font-size: 1.2em;
+      color: #666;
+    }
+  }
+  
